@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Makes website responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Our School</title>
+
+<style>
+
+/* ===== GENERAL STYLING ===== */
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+    background: linear-gradient(0deg, rgb(204, 238, 241) 0%, rgb(227, 216, 245) 92%);
+    color: var(--dark);
+    
+}
+
+
+.container{
+width:90%;
+margin:auto;
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+ background: rgba(26,41,48,0.95);
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+/* ===== HEADER ===== */
+
+.header{
+
+    background-color: rgb(228, 235, 241);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    
+}
+
+.header h1{
+font-size:40px;
+}
+
+/* ===== SECTIONS ===== */
+
+section{
+padding:60px 0;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#003366;
+}
+
+/* ===== GRID LAYOUT ===== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* ===== CARD DESIGN ===== */
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== HEADTEACHER MESSAGE ===== */
+
+.message{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:20px;
+align-items:center;
+}
+
+.message img{
+width:100%;
+border-radius:10px;
+}
+
+/* ===== VALUES LIST ===== */
+
+.values ul{
+list-style:none;
+padding:0;
+}
+
+.values li{
+background:white;
+margin-bottom:10px;
+padding:10px;
+border-left:5px solid #003366;
+}
+
+/* ===== PROFILE TABLE ===== */
+
+.profile table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+.profile td{
+padding:10px;
+border-bottom:1px solid #ddd;
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+text-align:center;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+.message{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.header h1{
+font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+
+<nav>
+
+<div><strong>My School</strong></div>
+
+<div>
+<a href="ST.JOHN'S ADMIN.html">BACK</a>
+
+</div>
+
+</nav>
+
+<!-- ===== PAGE HEADER ===== -->
+
+<div class="header">
+
+<h1>About Our School</h1>
+<p>Learn more about our history, mission, and leadership</p>
+
+</div>
+
+<!-- ===== SCHOOL HISTORY ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>School History</h2>
+
+<div class="card">
+
+<p>
+Our school was founded with the goal of providing quality education to the community.
+Over the years, it has grown into a respected institution known for academic excellence,
+innovation, and character development.
+</p>
+
+<p>
+From a small beginning with a few classrooms, the school has expanded to include modern
+facilities, laboratories, sports fields, and digital learning environments.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== MISSION & VISION ===== -->
+
+<section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Mission Statement</h3>
+
+<p>
+To provide high-quality education that nurtures intellectual growth,
+discipline, creativity, and leadership among students.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Vision Statement</h3>
+
+<p>
+To become a leading institution recognized for academic excellence,
+innovation, and responsible citizenship.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== CORE VALUES ===== -->
+
+<section>
+
+<div class="container values">
+
+<h2>Core Values</h2>
+
+<ul>
+
+<li>Integrity and honesty</li>
+
+<li>Respect for others</li>
+
+<li>Academic excellence</li>
+
+<li>Discipline and responsibility</li>
+
+<li>Innovation and creativity</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ===== HEADTEACHER MESSAGE ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>Headteacher's Message</h2>
+
+<div class="message">
+
+<img src="IM SJSS/TEACHER.jpg" alt="Headteacher">
+
+<div>
+
+<p>
+Welcome to our school. We are committed to creating a learning environment
+that supports academic achievement, personal development, and social responsibility.
+</p>
+
+<p>
+Our dedicated teachers and staff work hard to inspire students to reach
+their full potential and prepare them for future challenges.
+</p>
+
+<p><strong>— Headteacher</strong></p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== SCHOOL LEADERSHIP ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>School Leadership</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Headteacher</h3>
+<p>Dr. Jane Smith</p>
+
+</div>
+
+<div class="card">
+
+<h3>Deputy Headteacher</h3>
+<p>Mr. John Brown</p>
+
+</div>
+
+<div class="card">
+
+<h3>Academic Director</h3>
+<p>Mrs. Sarah Johnson</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== SCHOOL PROFILE ===== -->
+
+<section>
+
+<div class="container profile">
+
+<h2>School Profile</h2>
+
+<table>
+
+<tr>
+<td>School Type</td>
+<td>Secondary School</td>
+</tr>
+
+<tr>
+<td>Student Population</td>
+<td>1,200 Students</td>
+</tr>
+
+<tr>
+<td>Teaching Staff</td>
+<td>85 Teachers</td>
+</tr>
+
+<tr>
+<td>Established</td>
+<td>1995</td>
+</tr>
+
+<tr>
+<td>Curriculum</td>
+<td>National Curriculum</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ===== AWARDS ===== -->
+
+<section>
+
+<div class="container">
+<h2>Accreditations & Awards</h2>
+<div class="grid">
+
+<div class="card">
+<p>National Education Excellence Award</p>
+<img src="" alt="national Award">
+</div>
+
+<div class="card">
+<p>Top Regional School Performance Award</p>
+<img src="" alt="reginal Award">
+</div>
+
+<div class="card">
+<p>Best Science Education Program</p>
+<img src="" alt="Science Award">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== LOCATION ===== -->
+
+<section>
+
+<div class="container contact">
+
+<h2>Location & Contact Information</h2>
+
+<p><strong>Address:</strong> Kampala, Uganda</p>
+
+<p><strong>Phone:</strong> +256 700 000 000</p>
+
+<p><strong>Email:</strong> info@myschool.com</p>
+
+<p><strong>Website:</strong> www.myschool.com</p>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<p>© 2026 My School | All Rights Reserved</p>
+
+</footer>
+
+</body>
+
+</html>

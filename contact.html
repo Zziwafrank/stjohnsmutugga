@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us</title>
+
+<style>
+
+/* ===== GENERAL STYLE ===== */
+
+body{
+  font-family: var(--font-body);
+    line-height: 1.7;
+    scroll-behavior: smooth;
+   background: linear-gradient(0deg, rgb(204, 238, 241) 0%, rgb(227, 216, 245) 92%);
+    color: var(--dark);
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+width:90%;
+margin:auto;
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+ background: rgba(26,41,48,0.95);
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+/* ===== HEADER ===== */
+
+.header{
+
+    background-color: rgb(230, 235, 240);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    
+}
+
+.header h1{
+font-size:40px;
+}
+
+/* ===== SECTIONS ===== */
+
+section{
+padding:60px 0;
+}
+
+h2{
+text-align:center;
+color:#003366;
+margin-bottom:30px;
+}
+
+/* ===== GRID LAYOUT ===== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* ===== CARDS ===== */
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== CONTACT FORM ===== */
+
+form{
+display:flex;
+flex-direction:column;
+}
+
+input, textarea{
+padding:10px;
+margin-bottom:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#003366;
+color:white;
+padding:10px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* ===== MAP ===== */
+
+.map iframe{
+width:100%;
+height:300px;
+border:0;
+border-radius:10px;
+}
+
+/* ===== SOCIAL LINKS ===== */
+
+.social a{
+display:inline-block;
+margin:10px;
+text-decoration:none;
+color:white;
+background:#003366;
+padding:10px 15px;
+border-radius:5px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.header h1{
+font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+
+<nav>
+
+<div><strong>My School</strong></div>
+
+<div>
+<a href="ST.JOHN'S ADMIN.html">BACK</a>
+</div>
+
+</nav>
+
+<!-- ===== PAGE HEADER ===== -->
+
+<div class="header">
+
+<h1>Contact Us</h1>
+
+<p>We would love to hear from you</p>
+
+</div>
+
+<!-- ===== SCHOOL ADDRESS ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>School Address</h2>
+
+<div class="card">
+
+<p><strong>School Name:</strong> My School</p>
+
+<p><strong>Address:</strong> Matugga, Wakiso District, Uganda</p>
+
+<p><strong>Postal Address:</strong> P.O Box 123, Kampala</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== MAP LOCATION ===== -->
+
+<section>
+
+<div class="container map">
+
+<h2>Find Us on the Map</h2>
+
+<iframe
+src="IM SJSS/MAP.pdf">
+</iframe>
+
+</div>
+
+</section>
+
+<!-- ===== PHONE NUMBERS ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>Phone Numbers</h2>
+
+<div class="grid">
+
+<div class="card">
+<p><strong>Main Office:</strong> +256 700 000 000</p>
+</div>
+
+<div class="card">
+<p><strong>Admissions:</strong> +256 701 000 000</p>
+</div>
+
+<div class="card">
+<p><strong>Support Desk:</strong> +256 702 000 000</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== EMAILS ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>Email Addresses</h2>
+
+<div class="grid">
+
+<div class="card">
+<p><strong>General:</strong> info@myschool.com</p>
+</div>
+
+<div class="card">
+<p><strong>Admissions:</strong> admissions@myschool.com</p>
+</div>
+
+<div class="card">
+<p><strong>Support:</strong> support@myschool.com</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT FORM ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>Send Us a Message</h2>
+
+<div class="card">
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== DIRECTIONS ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>Directions</h2>
+
+<div class="card">
+
+<p>
+The school is located along the Kampala–Bombo Road near Matugga Town.
+Visitors can reach the school using public transport from Kampala city center.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== SOCIAL MEDIA ===== -->
+
+<section>
+
+<div class="container social">
+
+<h2>Follow Us</h2>
+
+<a href="#">Facebook</a>
+
+<a href="#">Twitter</a>
+
+<a href="#">Instagram</a>
+
+<a href="#">YouTube</a>
+
+</div>
+
+</section>
+
+<!-- ===== STAFF CONTACTS ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>Key Staff Contacts</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Headteacher</h3>
+
+<p>Email: headteacher@myschool.com</p>
+
+<p>Phone: +256 703 000 000</p>
+
+</div>
+
+<div class="card">
+
+<h3>Admissions Officer</h3>
+
+<p>Email: admissions@myschool.com</p>
+
+<p>Phone: +256 704 000 000</p>
+
+</div>
+
+<div class="card">
+
+<h3>ICT Administrator</h3>
+
+<p>Email: ict@myschool.com</p>
+
+<p>Phone: +256 705 000 000</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 My School | Contact Page</p>
+
+</footer>
+
+</body>
+
+</html>

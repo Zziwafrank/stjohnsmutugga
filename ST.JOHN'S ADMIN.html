@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St John's SSS Matugga - Excellence in Education</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+:root {
+    --primary: #2A5C82;
+    --secondary: #FF6B35;
+    --accent: #4CAF50;
+    --light: #F5F6FA;
+    --dark: #1A2930;
+    --visited-link: #6A1B9A;
+    --hover-color: #598cebf8;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    scroll-behavior: smooth;
+    background: linear-gradient(0deg, rgba(80,217,230,1) 0%, rgba(120,90,30,1) 92%);
+    color: var(--dark);
+ 
+ }
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.logo {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--secondary);
+    margin-right: 2rem;
+    transition: all 0.3s;
+}
+.logo:hover {transform: rotate(360deg) scale(1.1); box-shadow: 0 0 15px var(--secondary);}
+
+/* Navbar */
+.navbar {
+    background: rgba(26,41,48,0.95);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.nav-links a:hover {
+    background: rgba(248, 245, 245, 0.1);
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.hero .overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 2rem;
+    color: white;
+}
+.hero .overlay::before {
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.hero h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem,5vw,4rem);
+    margin-bottom: 1rem;
+}
+
+/* Sections */
+.section {padding: 4rem 2rem; text-align: center;}
+.section h2 {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3rem;
+    font-size: clamp(1.8rem,3vw,2.5rem);
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 2rem;
+}
+.feature-card {
+    background: rgba(255,255,255,0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+}
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+.feature-card video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 1rem;
+    transition: transform 0.4s ease;
+}
+.feature-card video:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 1rem;
+}
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, var(--dark), var(--primary));
+    color: white;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
+}
+.footer a {color: white; text-decoration:none; transition: color 0.3s;}
+.footer a:hover {color: var(--hover-color); text-decoration: underline;}
+
+/* Responsive */
+@media (max-width:768px){
+    .features-grid {grid-template-columns:1fr;}
+    .gallery {grid-template-columns:1fr;}
+    .hero {height:60vh;}
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <img src="IM SJSS/LOGO JSS.png" alt="School Logo" class="logo">
+    <div>
+        <h1>St John's Secondary School </h1>
+        <p>Matugga, P.O.Box 001 | Excellence Through Discipline</p>
+    </div>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="ST.JOHN'S ADMIN.html"></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <video autoplay muted loop controls>
+        <source src="VD SJSS/homecoming.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+        <h2>Welcome to St John's SS Matugga</h2>
+        <p>Nurturing Future Leaders Since 2015 <br><b>Yes we can</b></p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="section" id="about">
+    <h2>Why Choose St John's?</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>Academic Excellence</h3>
+            <p>students  begin their academic journey with strong guidance
+                from dedicated teachers 
+            </p>
+            <video autoplay muted loop controls>
+                <source src="VD SJSS/s1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="feature-card">
+            <h3>personal development support </h3>
+            <p>students receives continuous guidance to help them overcome challenges 
+                 </p>
+            <video autoplay muted loop controls>
+                <source src="VD SJSS/adsharingwisecontentphotographyschoollifecreatorse_1762721764592.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="feature-card">
+            <h3>harmony</h3>
+            <p>
+               singing ,performing arts ,music and creativity bring students together 
+               as a result of building strong  freindship.
+            </p>
+            <video autoplay muted loop controls>
+                <source src="VD SJSS/CapCutschoollifefyyyyyyyppptiktokviralstjohnssmatu_1773992322764.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="section">
+    <h2>Our Campus Facilities</h2>
+    <div class="gallery">
+        <img src="IM SJSS/images (3).jpg" alt="Advanced Science Laboratory">
+        <img src="IM SJSS/COMPUT.jpg" alt="Digital Library">
+        <img src="IM SJSS/fott.jpg" alt="Sports Complex">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+    <div>
+        <h3>Contact Information</h3>
+        <p>📍 P.O.Box 001, Matugga, Wakiso District</p>
+        <p>📞 +256 712 345 678</p>
+        <p>📧 admissions@stjohnsmatugga.ac.ug</p>
+    </div>
+    <div>
+        <h3>Quick Links</h3>
+        <a href="admission.page.html">Admissions Process</a><br>
+        <a href="admission.page.html">Academic Calendar</a><br>
+        <a href="about.html">School Brochure</a>
+    </div>
+    <div>
+        <h3>Connect With Us</h3>
+        <a href="#">Facebook</a><br>
+        <a href="#">Twitter</a><br>
+        <a href="#">YouTube Channel</a><br>
+        <a href="#">TikTok</a>
+    </div>
+   
+             <a href="ST.JOHN'S ADMIN.html">PAGE UP  </a>
+ 
+
+</footer>
+
+</body>
+</html>
